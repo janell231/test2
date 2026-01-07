@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Лендинг проекта</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="container nav">
+        <a class="logo" href="#top">NovaLanding</a>
+        <div class="nav-links">
+          <a href="#benefits">Преимущества</a>
+          <a href="#about">О проекте</a>
+          <a href="#contacts">Контакты</a>
+        </div>
+      </nav>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Современный одностраничный лендинг</p>
+          <h1>Запустите проект уверенно и быстро</h1>
+          <p class="subtitle">
+            Простой, аккуратный и адаптивный дизайн, который одинаково хорошо смотрится на
+            десктопе и смартфоне.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#benefits">Смотреть преимущества</a>
+            <a class="button ghost" href="#contacts">Связаться</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Фокус на результат</h2>
+          <p>
+            Четкая структура страницы помогает посетителю быстро понять ценность проекта и
+            перейти к действию.
+          </p>
+          <div class="hero-stats">
+            <div>
+              <span>3</span>
+              <small>секции</small>
+            </div>
+            <div>
+              <span>100%</span>
+              <small>адаптив</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="benefits">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Преимущества</h2>
+            <p>Дизайн и структура лендинга помогают быстро донести ключевые смыслы.</p>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <h3>Четкая структура</h3>
+              <p>Блоки распределены по логике воронки: интерес, доверие, контакт.</p>
+            </article>
+            <article class="card">
+              <h3>Современная типографика</h3>
+              <p>Контрастные заголовки и аккуратные отступы обеспечивают легкость чтения.</p>
+            </article>
+            <article class="card">
+              <h3>Готов к запуску</h3>
+              <p>Чистый HTML и CSS без лишних зависимостей — достаточно загрузить на хостинг.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="about">
+        <div class="container about">
+          <div>
+            <h2>О проекте</h2>
+            <p>
+              Этот лендинг создан, чтобы быстро представить ваш продукт или услугу. Он подойдет
+              стартапам, агентствам и небольшим компаниям, которым важна скорость запуска и
+              узнаваемый стиль.
+            </p>
+          </div>
+          <div class="about-highlight">
+            <p>
+              Используйте этот шаблон как основу: замените тексты, добавьте фирменные цвета и
+              расширьте секции под ваши цели.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="container contacts">
+          <div>
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами удобным способом — мы ответим в течение одного рабочего дня.</p>
+          </div>
+          <div class="contact-list">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="https://t.me/your_placeholder" target="_blank" rel="noreferrer">
+              Telegram: @your_placeholder
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <span>© <span id="year"></span> NovaLanding. Все права защищены.</span>
+        <a href="#top">Наверх ↑</a>
+      </div>
+    </footer>
+
+    <script>
+      const yearElement = document.getElementById("year");
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
